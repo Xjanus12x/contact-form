@@ -1,7 +1,7 @@
 import "./App.css";
 import Input from "./Components/Input";
 import radioIcon from "../public/assets/images/icon-radio-selected.svg";
-import { useCallback, useEffect, useReducer, useRef, useState } from "react";
+import { useReducer, useRef, useState } from "react";
 import initialState from "./Constants/FormInitialState";
 import ACTIONS from "./Constants/Actions";
 import Action, {
