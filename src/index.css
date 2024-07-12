@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Karla";
+  src: url("../public/assets/fonts/static/Karla-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+@keyframes inAnimation {
+  0% {
+    transform: translateY(-150%);
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes outAnimation {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 70%;
+  }
+
+  70% {
+    opacity: 40%;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+}
