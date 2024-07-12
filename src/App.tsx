@@ -309,7 +309,7 @@ function App() {
                 <Input.CheckBox />
                 {consent.value === "consent" && (
                   <img
-                    className="absolute inset-0 z-50 cursor-pointer"
+                    className="absolute inset-0 z-50 bg-white cursor-pointer"
                     src={checkBoxIcon}
                     alt="Checked icon"
                     aria-hidden
