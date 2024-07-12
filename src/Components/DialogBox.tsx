@@ -1,5 +1,5 @@
 import successIcon from "../../public/assets/images/icon-success-check.svg";
-import React, { PropsWithChildren, useEffect, useState } from "react";
+import { PropsWithChildren, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 
 const Portal = ({ children }: PropsWithChildren) => {
@@ -28,6 +28,7 @@ function DialogBox({ isDone, setIsDone }: DialogBoxProps) {
         setIsMounted(true);
       }, 500);
     }
+    return () => clearTimeout(timeoutId);
   }, [isMounted]);
 
   if (!isDone) return null;
